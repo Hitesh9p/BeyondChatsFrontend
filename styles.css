@@ -1,0 +1,101 @@
+/* General Styles */
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #f4f4f9;
+    text-align: center;
+    padding-top: 2rem;
+}
+
+#app {
+    max-width: 750px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Section Styles */
+section {
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.4s ease-in-out;
+}
+
+.animated-section.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Buttons */
+.primary-btn {
+    background: linear-gradient(135deg, #007bff, #6200ea);
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.primary-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(98, 0, 234, 0.3);
+}
+
+.secondary-btn {
+    background: #ff6600;
+    color: white;
+}
+
+/* Floating Labels */
+.input-container {
+    position: relative;
+    margin: 15px 0;
+}
+
+.input-container input {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+    background: none;
+}
+
+.input-container label {
+    position: absolute;
+    left: 12px;
+    top: 12px;
+    transition: 0.3s ease-out;
+    font-size: 16px;
+    color: #aaa;
+    pointer-events: none;
+}
+
+.input-container input:focus + label,
+.input-container input:valid + label {
+    top: -10px;
+    left: 8px;
+    font-size: 12px;
+    color: #6200ea;
+}
+
+/* Confetti */
+#confetti {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none;
+}
+
+/* Hide elements */
+.hidden {
+    display: none;
+}

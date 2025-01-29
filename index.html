@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BeyondChats Setup</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="app">
+        <section id="registration" class="animated-section">
+            <h2>🚀 Create Your Account</h2>
+            <form id="registrationForm">
+                <div class="input-container">
+                    <input type="text" required>
+                    <label>Name</label>
+                </div>
+                <div class="input-container">
+                    <input type="email" required>
+                    <label>Email</label>
+                </div>
+                <div class="input-container">
+                    <input type="password" required>
+                    <label>Password</label>
+                </div>
+                <button type="button" class="login-with-google-btn">
+                    Sign in with Google
+                </button>
+                <button type="submit" class="primary-btn">Register</button>
+            </form>
+            <div id="emailVerification" class="hidden">
+                <div class="input-container">
+                    <input type="text" required>
+                    <label>Enter verification code</label>
+                </div>
+                <button type="button" class="primary-btn">Verify</button>
+            </div>
+        </section>
+
+        <section id="setupOrganisation" class="hidden animated-section">
+            <h2>🏢 Setup Your Organization</h2>
+            <form id="organisationForm">
+                <div class="input-container">
+                    <input type="text" required>
+                    <label>Company Name</label>
+                </div>
+                <div class="input-container">
+                    <input type="url" required>
+                    <label>Company Website URL</label>
+                </div>
+                <textarea placeholder="Company Description"></textarea>
+                <button type="submit" class="primary-btn">Next</button>
+            </form>
+        </section>
+
+        <section id="chatbotIntegration" class="hidden animated-section">
+            <h2>🤖 Chatbot Integration</h2>
+            <button id="testChatbot" class="primary-btn">Test Chatbot</button>
+            <button id="integrateChatbot" class="secondary-btn">Integrate on Your Website</button>
+            <button id="testIntegration" class="primary-btn">Test Integration</button>
+        </section>
+
+        <section id="successUI" class="hidden animated-section">
+            <h2>🎉 Integration Successful!</h2>
+            <button class="primary-btn">Explore Admin Panel</button>
+            <button class="secondary-btn">Start Talking to Your Chatbot</button>
+            <div class="share-buttons">
+                <button class="facebook">Share on Facebook</button>
+                <button class="twitter">Share on Twitter</button>
+            </div>
+            <canvas id="confetti"></canvas>
+        </section>
+    </div>
+    <script src="script.js"></script>
+    
+</body>
+</html>
